@@ -5,7 +5,58 @@
 }
 body {
   background-color: hsl(0, 0%, 8%);
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
 }
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.mainBox {
+  height: 585px;
+  width: 380px;
+  background-color: hsl(0, 0%, 12%);
+  text-align: center;
+  border-radius: 10px;
+}
+.avatar {
+  border-radius: 50%;
+  height: 5.5rem;
+  margin-top: 40px;
+}
+.name {
+  color: hsl(0, 0%, 100%);
+  font-weight: 400;
+  margin-top: 20px;
+  font-size: 1.5rem;
+}
+.location {
+  color: hsl(75, 94%, 57%);
+  font-weight: 600;
+  margin: 10px;
+  font-size: 0.85rem;
+}
+.description {
+  color: hsl(0, 0%, 100%);
+  margin-top: 25px;
+  margin-bottom: 15px;
+  font-weight: 200;
+  font-size: 0.85rem;
+}
+.socialLinks {
+  display: inline-block;
+  background-color: hsl(0, 0%, 20%);
+  margin: 8px;
+  width: 300px;
+  height: 40px;
+  border-radius: 10px;
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  padding-top: 12px;
+}
+
 .attribution {
   color: hsl(0, 0%, 100%);
   font-size: 11px;
