@@ -54,14 +54,11 @@ ul.socialLinks {
 }
 .socialLinks li {
   transform: translateX(38px);
+  background-color: hsl(0, 0%, 20%);
   margin-bottom: 15px;
   border-radius: 7px;
-
-  background-color: hsl(0, 0%, 20%);
   max-width: 288px;
-
   padding: 13px;
-  color: hsl(0, 0%, 100%);
 }
 
 .socialLinks a {
