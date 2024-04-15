@@ -15,22 +15,22 @@ body {
   height: 100vh;
 }
 .mainBox {
-  height: 585px;
-  width: 380px;
+  min-height: 580px;
+  width: 365px;
   background-color: hsl(0, 0%, 12%);
   text-align: center;
-  border-radius: 10px;
+  border-radius: 12px;
 }
 .avatar {
   border-radius: 50%;
-  height: 5.5rem;
-  margin-top: 40px;
+  height: 5.3rem;
+  margin-top: 38px;
 }
 .name {
   color: hsl(0, 0%, 100%);
-  font-weight: 400;
-  margin-top: 20px;
-  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: 23px;
+  font-size: 1.45rem;
 }
 .location {
   color: hsl(75, 94%, 57%);
@@ -45,18 +45,37 @@ body {
   font-weight: 200;
   font-size: 0.85rem;
 }
-.socialLinks {
-  display: inline-block;
+
+ul.socialLinks {
+  font-weight: 600;
+  list-style: none;
+  list-style-type: none;
+  margin-top: 25px;
+}
+.socialLinks li {
+  margin-left: 38px;
+  margin-bottom: 15px;
+  border-radius: 7px;
+
   background-color: hsl(0, 0%, 20%);
-  margin: 8px;
-  width: 300px;
-  height: 40px;
-  border-radius: 10px;
+  width: 288px;
+
+  padding: 13px;
   color: hsl(0, 0%, 100%);
-  font-weight: 700;
-  padding-top: 12px;
 }
 
+.socialLinks a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+}
+
+.socialLinks li:hover {
+  background-color: hsl(75, 94%, 57%);
+  cursor: pointer;
+}
+.socialLinks li:hover a {
+  color: hsl(0, 0%, 20%);
+}
 .attribution {
   color: hsl(0, 0%, 100%);
   font-size: 11px;
@@ -64,4 +83,13 @@ body {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+@media only screen and (max-width: 505px) {
+  .mainBox {
+    width: 65%;
+    min-height: 70%;
+  }
+  .socialLinks {
+    width: 85%;
+  }
 }
