@@ -53,12 +53,12 @@ ul.socialLinks {
   margin-top: 25px;
 }
 .socialLinks li {
-  margin-left: 38px;
+  transform: translateX(38px);
   margin-bottom: 15px;
   border-radius: 7px;
 
   background-color: hsl(0, 0%, 20%);
-  width: 288px;
+  max-width: 288px;
 
   padding: 13px;
   color: hsl(0, 0%, 100%);
@@ -84,12 +84,12 @@ ul.socialLinks {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
-@media only screen and (max-width: 505px) {
+@media only screen and (max-width: 375px) {
   .mainBox {
     width: 65%;
-    min-height: 70%;
+    min-height: 78%;
   }
-  .socialLinks {
-    width: 85%;
+  .socialLinks li {
+    max-width: 78%;
   }
 }
